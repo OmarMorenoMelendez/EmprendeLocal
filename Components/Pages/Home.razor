@@ -1,7 +1,74 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<link href="estilo.css" rel="stylesheet" />
 
-<h1>Hello, world!</h1>
+<header class="hero">
+    <nav class="navbar">
+        <div class="logo"><img src="img/emprendelocalB.png" alt="Alternate Text" /></div>
+        <ul class="menu">
+            <li><a href="#emprendedores">Inicio</a></li>
+            <li><a href="#destacado">Destacado</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>Descubre el talento local</h1>
+        <p>Conoce y apoya a los emprendedores de tu comunidad desde cualquier lugar</p>
+        <a href="#emprendedore" class="btn">Explorar ahora</a>
+    </div>
+</header>
 
-Welcome to your new app.
+<section id="emprendedores" class="section">
+    <h2>Emprendedores</h2>
+    <div class="card">
+        <img src="img/pan.jpg" alt="Producto">
+        <div>
+            <h3>Panadería Doña Rosa</h3>
+            <p>Deliciosos panes y dulces artesanales hechos en casa.</p>
+            <a href="mailto:contacto@panaderia.com" class="btn">Contactar</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/pan.jpg" alt="Producto">
+        <div>
+            <h3>Panadería Doña Rosa</h3>
+            <p>Deliciosos panes y dulces artesanales hechos en casa.</p>
+            <a href="mailto:contacto@panaderia.com" class="btn">Contactar</a>
+        </div>
+    </div>
+</section>
+
+<section id="destacado" class="section">
+    <h2>Destacado de la Semana</h2>
+    <div class="card">
+        <img src="img/cafe-leche.jpg" alt="Producto Destacado">
+        <div>
+            <h3>Café El Buen Sabor</h3>
+            <p>Café orgánico cultivado por productores locales. <br /> Sabor auténtico de nuestra tierra.</p>
+            <a href="mailto:contacto@panaderia.com" class="btn">Contactar</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="registro" class="section">
+    <h2>Registra tu Emprendimiento</h2>
+    <form class="formulario" action="https://formspree.io/f/xwpballa" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre del emprendimiento" required>
+        <input type="text" name="categoria" placeholder="Categoría (comida, ropa, etc.)" required>
+        <textarea name="descripcion" placeholder="Descripción del negocio" required></textarea>
+        <input type="email" name="correo" placeholder="Correo de contacto" required>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? Escríbenos a: <strong>emprendelocal@correo.com</strong></p>
+</section>
+
+<footer>
+    <div class="logo"><img src="img/emprendelocalB.png" alt="Alternate Text" /></div>
+    <p>&copy; 2025 EmprendeLocal. Todos los derechos reservados.</p>
+</footer>
