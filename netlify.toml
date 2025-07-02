@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/Home.razor"
-  status = 200
